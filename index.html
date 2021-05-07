@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <title> Guerreros </title>
+  </head>
+
+  <body>
+    <header class ="bg-dark container-fluid">
+        <div class="row">
+            <div  class="col-12 col-md-8 col-lg-2">
+                <img  src="img/Anillo_unico.jpg" alt="Logo anillo" id = "logo_anillo" class = "img-fluid" >
+            </div>
+
+            <div class=" text-center col-12-col-md-4 col-lg-10">
+                <h1 style="font-family:fantasy " class = "text-danger" > Uno para dominarlos a todos</h1>
+            </div>
+         
+        </div>
+    </header>
+    
+    <main class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">
+
+             <div class="bg-dark text-light">
+               <div class="bg-gradient card-header">
+                 <span>Ingresar Guerreros</span>
+               </div>
+        
+               <div class="card-body">
+                 <div class="mb-3" >
+                   <!--Nombre-->
+                   <label  for="nombre-txt" class="form-label">Nombre</label>
+                   <input  required type="text" id="nombre-txt" class="form-control" >
+                 </div>
+
+                 <div class="mb-3">
+                   <!--Tipo-->
+                   <label for="tipo-select"class="form-label">Tipo</label>
+                   <select id="tipo-select" class="form-select">
+                    <option value="orco">Orco</option>
+                    <option value="uruk">Uruk</option>
+                   </select>
+                 </div>
+
+                 <div class="mb-3">
+                   <!--Rango-->
+                   <label for="rango-select" class="form-label">Rango</label>
+                   <select id="rango-select" class="form-select">
+                     <option value="guerrero">Guerrero</option>
+                     <option value="capitan">Capitán</option>
+                     <option value="caudillo">Caudillo</option>
+                     <option value="mano_sauron">Mano de sauron</option>
+                   </select>
+                 </div>
+
+               </div>
+
+               <div class="card-footer">
+                 <div class="d-grid">
+                   <button type="submit" id ="registrar-btn" class="btn btn-success">Registrar</button>
+                </div>
+               </div>
+
+             </div>
+          </div>
+
+          <div class="col col-md col-lg">
+            <div class=" card">
+              <div class="bg-dark bg-gradient  text-light card-header">
+                <span>Listado de Guerreros</span>
+              </div>
+
+              <div class="card-body">
+                <table class="table table-bordered table-hover table-stripped  ">
+                  <thead>
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Tipo</th>
+                      <th>Rango</th>
+                      <th>Vinculo</th>
+                    </tr>
+                   
+                  </thead>
+
+                  <tbody id="table-tbody">
+            
+                  </tbody>
+                </table>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="JS/index.js"></script>
+  </body>
+</html>
